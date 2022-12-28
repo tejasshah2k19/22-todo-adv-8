@@ -1,0 +1,8 @@
+create table todo(
+	todoid integer primary key  auto_increment,
+	title varchar(50),
+	description varchar(500),
+	isCompleted boolean,
+	datetime varchar(20),
+	userid integer
+);                 
