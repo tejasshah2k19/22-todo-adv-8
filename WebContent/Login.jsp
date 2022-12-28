@@ -34,7 +34,10 @@
 					<button type="submit" class="btn btn-primary">Login</button>
 
 					${error }
+
 				</form>
+				<br> <a href="Signup.jsp">Signup</a>
+
 			</div>
 		</div>
 	</div>

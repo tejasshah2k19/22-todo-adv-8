@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 				
 				Cookie c = new Cookie("userName", firstName);
 				response.addCookie(c);
-				response.sendRedirect("Home.jsp");
+				response.sendRedirect("HomeServlet");
 			} else {
 				request.setAttribute("error", "Invalid Credentials");
 				RequestDispatcher rd = request.getRequestDispatcher("Login.jsp");
