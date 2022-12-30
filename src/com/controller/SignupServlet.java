@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.util.DbConnection;
+import com.util.SendMail;
 
 public class SignupServlet extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
@@ -30,7 +31,8 @@ public class SignupServlet extends HttpServlet {
 			pstmt.setString(3, password); 
 
 			pstmt.executeUpdate();
-			       
+			SendMail.sendWelcomeMailToUser(email);       
+			
 			response.sendRedirect("Login.jsp");
 		} catch (Exception e) {
 			e.printStackTrace();
