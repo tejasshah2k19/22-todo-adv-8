@@ -34,4 +34,24 @@
     <servlet-name>HomeServlet</servlet-name>
     <url-pattern>/HomeServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ForgetPassowrdServlet</display-name>
+    <servlet-name>ForgetPassowrdServlet</servlet-name>
+    <servlet-class>com.controller.ForgetPassowrdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgetPassowrdServlet</servlet-name>
+    <url-pattern>/ForgetPassowrdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResetPasswordServlet</display-name>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <servlet-class>com.controller.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <url-pattern>/ResetPasswordServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
