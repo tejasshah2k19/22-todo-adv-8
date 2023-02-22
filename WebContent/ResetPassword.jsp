@@ -21,7 +21,7 @@
 			<div class="col-md-6">
 				<h2>Update your Password</h2>
 				<h4>Please Check your Inbox!!!</h4>
-				<form class="form-horizontal" action="ForgetPassowrdServlet"
+				<form class="form-horizontal" action="ResetPasswordServlet"
 					method="post">
 					<div class="form-group">
 						<label>Email</label> <input type="text" name="email"
